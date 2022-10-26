@@ -1,52 +1,90 @@
-body{
-    height:100%;
-    width: 100%;
-    margin:0;
-    display: flex;
-    flex-direction: column;
+*{
     font-family: 'Kulim Park', sans-serif;
 }
 
-/* Navigation Bar */
-
-.navigation-bar{
-    width: 350px;
-    height: 100%;
-    background: #f1bb81;
-    position: fixed;
+body {
+    margin: 0;
 }
 
-.navigation-bar h1{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+h1 {
+    font-size: 3rem;
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Space Mono', monospace;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+section {
+    margin: 5rem;
     text-align: center;
 }
 
-.navigation-bar ul li{
+
+/*Dividir en 2 columnas el body*/
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Navigation Bar*/
+.navigation-bar {
+    flex: 30%;
+    background: #f1bb81;
+    text-align: center; 
+}
+
+.navigation-bar h1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;  
+}
+
+.menu li {
     display: flex;
     column-gap: 5rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 14px;
     background: white;
-    margin-right: 5rem;
-    margin-left: 2rem;
+    margin-right: 7rem;
+    margin-left: 3rem;
     margin-bottom: 2rem;
     border-radius: 10px;
+    font-size: 1rem;
+    /*position relative*/
 }
 
-.navigation-bar ul li:hover{
+.menu li:hover {
     background: rgb(236, 231, 231);
     font-weight: bold;
 }
 
-.navigation-bar ul li span:hover{
+.menu span:hover {
     background: rgb(236, 231, 231);
     font-weight: bold;
 }
 
-
-.main{
-    height: 100%;
-    background: rgba(255, 255, 255, 0.795);
+/* Content*/
+.main {
+    flex: 70%;
+    background: #FAF8F7;
 }
+
+#home img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+/*rgb(243, 240, 240);*/
