@@ -1,76 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/map.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Eliana Auria</title>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="navigation-bar">
-            <h1> ABOUT ME </h1>
-            <nav class="menu">
+        <section id="navigation-bar">
+            <div class="header">
+                <h1> ABOUT ME </h1> 
+            </div>
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li> <a href="#profile"> Profile  <span class="material-symbols-outlined"> person_filled </span> </a>  </li> 
+                        <li> <a href="#skills"> Skills <span class="material-symbols-outlined"> insights </span> </a> </li>
+                        <li> <a href="#works"> Works <span class="material-symbols-outlined"> work_history </span> </a> </li>
+                        <li> <a href="#map"> Map <span class="material-symbols-outlined"> location_on </span> </a> </li>     
+                        <li> <a href="#contact"> Contact <span class="material-symbols-outlined"> mail </span> </a> </li>    
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="home">
+            <div class="header">
+                <h2> HELLO, </h2> 
+            </div>
+            <div id="imageHome">
+                <img alt="Photo" src="images/Image-Profile.jpeg">
+            </div>
+            <div id="name">
+                <h2> I AM <br> ELIANA AURIA </h2>
+            </div>     
+        </section>
+
+        <section id="profile">
+            <h2> Allow me to introduce myself </h2>
+            <p>
+                My name is Eliana and I'm just starting third year of my Computer
+                Science studies at ESPOL University in Ecuador. The world of computers
+                is growing at an un-recordable rate everyday, computers are the most
+                influential tools in our lives, they are our present and future. In my
+                opinion nothing on the planet can measure the exponential growth and
+                excitement in the computing industry, an industry which I want to be a
+                part of.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2> HELLO, </h2>
+        </section>
+
+        <section id="works">
+            <h2> HELLO, </h2>
+        </section>
+        
+        <section id="map">
+            <h2 class="header"> Where can you find me? </h2>
+            <div id="bodyMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.069249125154!2d-79.92876418524489!3d-2.1270563984495032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfd4441f638ec3a5!2zMsKwMDcnMzcuNCJTIDc5wrA1NSczNS43Ilc!5e0!3m2!1ses!2sec!4v1666776295909!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="social">
+                <h2 class="header">Social Media</h2>
                 <ul>
-                    <a class="link" href="#profile">
-                        <li> Profile <span class="material-symbols-outlined"> person_filled </span> </li>
-                    </a>
-                    <a class="link" href="#skills">
-                        <li> Skills <span class="material-symbols-outlined"> insights </span> </li>
-                    </a>
-                    <li> Works <span class="material-symbols-outlined"> work_history </span> </li>
-                    <li> Contact <span class="material-symbols-outlined"> mail </span> </li>
+                    <li> 
+                        <a href="https://www.linkedin.com/in/eliana-auria-bb0518255/">
+                            <img alt="Linkedin" src="https://img.icons8.com/fluency/50/000000/linkedin-circled.png"/>
+
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://instagram.com/elianauria?igshid=YmMyMTA2M2Y=">
+                            <img alt="Instagram"  id="imgInstagram"src="images/Instagram.png"/>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://www.facebook.com/profile.php?id=100009490969801">
+                            <img alt="Faceboook" src="https://img.icons8.com/color/50/000000/facebook-new.png"/>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://pin.it/6Nmq2oT">
+                            <img alt="Pinterest" src="https://img.icons8.com/color/50/000000/pinterest--v1.png"/>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://github.com/eauria12">
+                            <img alt="Github" src="https://img.icons8.com/material-rounded/50/000000/github.png"/>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="https://youtube.com/channel/UC-xMBaPfHzm4uaLPn55QnlA">
+                            <img alt="Youtube" src="https://img.icons8.com/external-others-inmotus-design/50/000000/external-YouTube-browser-others-inmotus-design-2.png"/>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-
-        <div class="main">
-            <section id="home">
-                <h2> HELLO, </h2>
-                <img src="images/Image-Profile.jpeg">
-                <h1> I AM <br> ELIANA AURIA </h1>
-            </section>
-
-            <section id="profile">
-
-            </section>
-
-            <section id="skills">
-
-            </section>
-
-            <section id="works">
-
-            </section>
-
-            <section id="contact">
-                <form id="formulario">
+            </div>
+            <div id="form">
+                <div class="header">
+                    <h2> Contact Form </h2>
+                    <span>Please let me know your query </span> 
+                </div>
+                <form id="formContact">
                     <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="firstName" required="required" placeholder="Your name.." />
+                    <input type="text" id="firstName" name="firstName" required="required" placeholder="Your name.."/>
                     <p>
                         <label for="lastName">Last Name: </label>
                         <input type="text" id="lastName" name="lastName" required="required" placeholder="Your last name.."/>
                     </p>
                     <p>
                         <label for="email">Email: </label>
-                        <input type="email" id="email" name="email" required="required" /> 
-                    </p> 
+                        <input type="email" id="email" name="email" required="required" placeholder="example@gmail.com"/>
+                    </p>
                     <p>
-                        <label for="mensaje">Mensaje: </label>
-                        <textarea id="mensaje" name="mensaje" rows="10" cols="50"> </textarea>
-                    </p>  
+                        <label for="mensaje">Message: </label>
+                        <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Write your message here.."></textarea>
+                    </p>
                     <p>
-                        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> 
-                        <label for="nosoyunrobot">No soy un robot </label>
+                        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot" required="required">
+                        <label for="nosoyunrobot"> I'm not a robot </label>
                     </p>
                     <p>
                         <button type="submit" name="enviar"> Submit </button>
                     </p>
                 </form>
-            </section>
-        </div>
+            </div>
+        </section>
+
     </div>
 </body>
+
 </html>

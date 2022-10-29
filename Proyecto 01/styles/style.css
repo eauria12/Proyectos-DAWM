@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: block;
+}
+
+.header {
+    text-align: center;
+    margin: 30px;
+}
+
+/*División de las secciones*/
+.container {
+    display: grid; 
+    row-gap: 0.35rem;
+    column-gap: 0.35rem;
+    grid-template-columns: 0.5fr 1fr;
+    overflow: hidden;
+}
+
+.container section:nth-child(1) {
+    background-color: #F1BB81; 
+    grid-row: 1/7;
+}
+.container section:nth-child(2) {
+    text-align: center;
+    background-color: #FAF8F7;
+    grid-column: 2/3;
+}
+
+.container section:nth-child(3) {
+    background-color: #FAF8F7;
+    grid-column: 2/3;
+}
+.container section:nth-child(4) {
+    background-color: #FAF8F7;
+    grid-column: 2/3;
+
+}
+.container section:nth-child(5) {
+    background-color: yellow;
+    grid-column: 2/3;
+}
+.container section:nth-child(6) {
+    text-align: center;
+    background-color: aquamarine;
+    grid-column: 2/3;
+}
+.container section:nth-child(7) {
+    background-color: #FAF8F7;
+    grid-column: 2/3;
+}
+
+.container section {
+    height: 100vh;
+}
