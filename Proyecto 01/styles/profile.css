@@ -1,0 +1,30 @@
+/*Profile*/
+#bodyProfile {
+    display: grid;
+    background-color: #FAF8F7;
+    grid-template-columns: 0.5fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    font-family: 'Tinos', serif;
+    font-size: 1.2rem;
+}
+
+#imagesProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    margin-left: 3rem;
+    padding: 3rem;
+}
+
+#plot {
+    margin-right: 5rem;
+    text-align: justify;
+}
+
+#imagesProfile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}

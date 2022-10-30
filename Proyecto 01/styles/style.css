@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300&display=swap');
 
+/*Container*/
 body {
     margin: 0;
 }
@@ -30,7 +31,9 @@ li {
 
 .header {
     text-align: center;
-    margin: 30px;
+    font-family: 'Kulim Park', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /*División de las secciones*/
@@ -43,7 +46,7 @@ li {
 }
 
 .container section:nth-child(1) {
-    background-color: #F1BB81; 
+    background-color: #f1bb81c9; 
     grid-row: 1/7;
 }
 .container section:nth-child(2) {
@@ -53,21 +56,20 @@ li {
 }
 
 .container section:nth-child(3) {
-    background-color: #FAF8F7;
+    background-color: #f1bb81c9;
     grid-column: 2/3;
 }
 .container section:nth-child(4) {
-    background-color: #FAF8F7;
+    background-color: #f1bb81c9;
     grid-column: 2/3;
 
 }
 .container section:nth-child(5) {
-    background-color: yellow;
+    background-color: #FAF8F7;
     grid-column: 2/3;
 }
 .container section:nth-child(6) {
-    text-align: center;
-    background-color: aquamarine;
+    background-color: #f1bb81c9;
     grid-column: 2/3;
 }
 .container section:nth-child(7) {
@@ -77,4 +79,7 @@ li {
 
 .container section {
     height: 100vh;
+    overflow: hidden;
 }
+
+

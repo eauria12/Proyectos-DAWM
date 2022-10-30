@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300&display=swap');
-
-/*form*/
+/*Contact*/
 #contact {
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    font-family: 'Kulim Park', sans-serif;
+    font-family: 'Tinos', serif;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 #social {
-    background-color: #f1bb81c9; 
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;*/
+    row-gap: 0.2rem;
+    background-color: #f1bb81c9; 
+}
+
+#social ul {
+    margin-left: 2rem;
 }
 
 #social li {
@@ -24,27 +27,26 @@
     height: 50px;
 }
 
-#social ul {
-    margin-top: 2rem;
-    margin-left: 2rem;
+/*Form*/
+#form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    align-items: center;
 }
 
-/*Form*/
-#form .header h2 {
-    margin-top: 1.2rem;
+#form h2 {
+    margin-top: 0.5rem;
     margin-bottom: 0.3rem;
 }
 
-#formContact {
-    margin: 0 90px 0 90px;
-}
 
 input[type=checkbox] {
-    width: 3%;
+    width: 5%;
 }
 
 input, textarea {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin: 7px 0 0 0;
     border-radius: 5px;
@@ -53,14 +55,14 @@ input, textarea {
 }
 
 button {
-    width: 95%;
+    width: 105%;
     background-color: #f1bb81c9 ; 
     border: none;
     border-radius: 5px;
     padding: 10px;
     margin: 7px 0;
     cursor: pointer;
-    font-family: 'Kulim Park', sans-serif;
+    font-family: 'Tinos', serif;
     font-size: 1.2rem;  
     transition: background-color 0.2s ease;
 }
@@ -80,7 +82,7 @@ button:hover {
 }
 
 button:active {
-    background-color: rgb(161, 149, 149) ;
+    background-color: rgba(236, 231, 231, 0.87) ;
     font-weight: bold;
 }
 
