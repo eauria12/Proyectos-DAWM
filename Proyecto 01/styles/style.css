@@ -31,7 +31,6 @@ li {
 
 .header {
     text-align: center;
-    font-family: 'Kulim Park', sans-serif;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -42,7 +41,6 @@ li {
     row-gap: 0.35rem;
     column-gap: 0.35rem;
     grid-template-columns: 0.5fr 1fr;
-    overflow: hidden;
 }
 
 .container section:nth-child(1) {
@@ -73,13 +71,37 @@ li {
     grid-column: 2/3;
 }
 .container section:nth-child(7) {
-    background-color: #FAF8F7;
+    background-color: #f1bb81c9;
     grid-column: 2/3;
 }
 
 .container section {
     height: 100vh;
     overflow: hidden;
+    padding: 1rem;
 }
 
+@media screen and (max-width: 820px) {
+    .container {
+        display: flex;
+        flex-direction: column;   
+    }
 
+    .container section {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) { /*395*/
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}

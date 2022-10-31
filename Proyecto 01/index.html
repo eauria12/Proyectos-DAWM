@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/sidebar.css">
@@ -20,59 +22,49 @@
 
 <body>
     <div class="container">
-
+        
         <section id="navigation-bar">
             <h1 class="header"> ABOUT ME </h1> 
-            <div>
-                <nav class="menu">
-                    <ul>
-                        <li> <a href="#profile"> Profile  <span class="material-symbols-outlined"> person_filled </span> </a>  </li> 
-                        <li> <a href="#skills"> Skills <span class="material-symbols-outlined"> insights </span> </a> </li>
-                        <li> <a href="#works"> Works <span class="material-symbols-outlined"> work_history </span> </a> </li>
-                        <li> <a href="#map"> Map <span class="material-symbols-outlined"> location_on </span> </a> </li>     
-                        <li> <a href="#contact"> Contact <span class="material-symbols-outlined"> mail </span> </a> </li>    
-                    </ul>
-                </nav>
-            </div>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="#profile"> Profile  <span class="material-symbols-outlined"> person_filled </span> </a> </li> 
+                    <li> <a href="#skills"> Skills <span class="material-symbols-outlined"> insights </span> </a> </li>
+                    <li> <a href="#works"> Projects <span class="material-symbols-outlined"> work_history </span> </a> </li>
+                    <li> <a href="#map"> Map <span class="material-symbols-outlined"> location_on </span> </a> </li>     
+                    <li> <a href="#contact"> Contact <span class="material-symbols-outlined"> mail </span> </a> </li>    
+                </ul>
+            </nav>
         </section>
 
         <section id="home">
             <h2 class="header"> HELLO, </h2> 
-            <div id="imageHome">
-                <img alt="Photo" src="images/Image-Profile.jpeg">
-            </div>
-            <div id="name">
-                <h2> I AM <br> ELIANA AURIA </h2>
-            </div>     
+            <img alt="Photo" src="images/Image-Profile.jpeg">
+            <h2> I AM <br> ELIANA AURIA </h2>     
         </section>
 
         <section id="profile">
-            <div class="header">
-                <h2> Allow me to <br> introduce myself </h2>
-            </div>
+            <h2 class="header"> Allow me to <br> introduce myself </h2>
             <div id="bodyProfile">
                 <div id="imagesProfile">
                     <img alt="FIEC" src="images/FIEC.png">
                     <img alt="Technology" src="images/Technology.jpeg">
                 </div>
-                <div id="plot">
-                    <p>
-                        My name is Eliana and I'm just starting fifth year of my Computer
-                        Science studies at ESPOL University in Ecuador. We live in a digitalized 
-                        planet that is constantly changing, presenting new challenges and challenges 
-                        that I would like to face with creativity to achieve a significant change in society. 
-                        It is also an industry that has become indispensable in the market 
-                        since not only people need it but also the companies regardless of the area in which they work.
-                    </p>
-                </div>
+                <p>
+                    My name is Eliana and I'm just starting fifth year of my Computer
+                    Science studies at ESPOL University in Ecuador. We live in a digitalized 
+                    planet that is constantly changing, presenting new challenges and challenges 
+                    that I would like to face with creativity to achieve a significant change in society. 
+                    It is also an industry that has become indispensable in the market 
+                    since not only people need it but also the companies regardless of the area in which they work.
+                </p>
             </div>  
         </section>
 
         <section id="skills">
-            <h2 class="header"> Skills </h2>
             <div id="bodyTable">
+                <h2 class="header">Skills</h2>
                 <div>
-                    <p>Knows about the programming languages ​​that I call as well as the software <br> that I use for web design in addition to my hobbies.</p>
+                    <p>Knows about the programming languages ​​that I call as well as the software that I use for web design in addition to my hobbies.</p>
                 </div>
                 <table id="interests">
                     <tr>
@@ -107,14 +99,14 @@
                     </tr>
                 </table>          
             </div>
+            
+                        
         </section>
 
         <section id="works">
-            <h2 class="header"> Works </h2>
+            <h2 class="header"> Projects </h2>
             <div id="bodyWorks">
-                <div>
-                    <p>As a student I have contributed to some projects and research such as:</p>
-                </div>
+                <p>As a student I have contributed to some projects and research such as:</p>
                 <div id="videos">
                     <div>       
                         <iframe src="https://www.youtube.com/embed/xt3JW05Z_gU" 
@@ -154,6 +146,35 @@
         </section>
 
         <section id="contact">
+            <div id="form">
+                <div class="header">
+                    <h2> Contact Form </h2>
+                    <span>Please let me know your query </span> 
+                </div>
+                <form id="formContact">
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="firstName" required="required" placeholder="Your name.."/>
+                    <p>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" required="required" placeholder="Your last name.."/>
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required="required" placeholder="example@gmail.com"/>
+                    </p>
+                    <p>
+                        <label for="mensaje">Message: </label>
+                        <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Write your message here.." required="required"></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot" required="required">
+                        <label for="nosoyunrobot"> I'm not a robot </label>
+                    </p>
+                    <p>
+                        <button type="submit" name="enviar"> Submit </button>
+                    </p>
+                </form>
+            </div>
             <div id="social">
                 <h2 class="header"> Social Media </h2>
                 <ul>
@@ -189,35 +210,6 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div id="form">
-                <div class="header">
-                    <h2> Contact Form </h2>
-                    <span>Please let me know your query </span> 
-                </div>
-                <form id="formContact">
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="firstName" required="required" placeholder="Your name.."/>
-                    <p>
-                        <label for="lastName">Last Name: </label>
-                        <input type="text" id="lastName" name="lastName" required="required" placeholder="Your last name.."/>
-                    </p>
-                    <p>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" name="email" required="required" placeholder="example@gmail.com"/>
-                    </p>
-                    <p>
-                        <label for="mensaje">Message: </label>
-                        <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Write your message here.." required="required"></textarea>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot" required="required">
-                        <label for="nosoyunrobot"> I'm not a robot </label>
-                    </p>
-                    <p>
-                        <button type="submit" name="enviar"> Submit </button>
-                    </p>
-                </form>
             </div>
         </section>
 

@@ -1,4 +1,11 @@
 /*Profile*/
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #bodyProfile {
     display: grid;
     background-color: #FAF8F7;
@@ -6,7 +13,7 @@
     column-gap: 2rem;
     align-items: center;
     font-family: 'Tinos', serif;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*3vh*/
 }
 
 #imagesProfile {
@@ -15,11 +22,11 @@
     align-items: center;
     row-gap: 1.5rem;
     margin-left: 3rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
-#plot {
-    margin-right: 5rem;
+#profile p {
+    margin-right: 6rem;
     text-align: justify;
 }
 
@@ -27,4 +34,32 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 560px) {
+    #bodyProfile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    #imagesProfile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 3rem;
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    #imagesProfile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #profile p {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }
