@@ -33,9 +33,19 @@ span {
     color: #e6b242;
 }
 
+.navbar-fixed-top {
+    background-color: #984b43;
+}
+
+.img {
+    padding: 10px;
+    margin-top: 3rem;
+}
+
 .mySlides {
     height: 460px;
     width: 1200px;
+    border-radius: 5px;
 }
 
 .button {
@@ -75,10 +85,10 @@ span {
 #tabla {
     color: white;
     font-family: 'Kulim Park', sans-serif;
-    letter-spacing: 0.2em;
+    
 }
 
-#tabla tr, #tabla th {
+#tabla tr, #tabla th, #tabla td {
     border: 2px solid #e6b242;
     border-collapse: collapse;
     padding: 10px;
@@ -88,4 +98,6 @@ span {
     height: 6vh;
     width: 30%; 
     font-weight: 300;
+    font-weight: bold;
+    letter-spacing: 0.2em;
 }
