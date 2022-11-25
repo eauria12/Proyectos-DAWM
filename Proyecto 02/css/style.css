@@ -1032,6 +1032,17 @@ body {
   height: 49px;
 }
 
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .menu-toggle {
   background-image: url(../img/svg/Bulk/Menu-toggle-white.svg);
   width: 24px;
@@ -3477,6 +3488,12 @@ label {
 #bodyTable-Api .rating {
   color: #fc424a;
   border: 1px solid #fc424a;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__heartBeat {
+  --animate-duration: 3s;
+  --animate-delay: 10s;
 }
 
 @media (min-width: 576px) {
