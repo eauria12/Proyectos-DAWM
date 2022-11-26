@@ -3491,10 +3491,12 @@ label {
 }
 
 /* This only changes this particular animation duration */
-.animate__animated.animate__heartBeat {
-  --animate-duration: 3s;
-  --animate-delay: 10s;
+.icon.logo.animate__animated.animate__heartBeat {
+  --animate-infinite: infinite;
 }
+
+
+
 
 @media (min-width: 576px) {
   .container {
