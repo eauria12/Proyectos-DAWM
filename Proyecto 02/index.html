@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
   <!-- Custom styles -->
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Effect styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
@@ -202,8 +203,8 @@
         <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
         <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
       </button-->
-      <div class="notification-wrapper animate__animated animate__tada">
-        <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
+      <div class="notification-wrapper">
+        <button class="gray-circle-btn dropdown-btn animate__animated animate__wobble" title="To messages" type="button">
           <span class="sr-only">To messages</span>
           <span class="icon notification active" aria-hidden="true"></span>
         </button>
@@ -361,11 +362,11 @@
                   <tr class="users-table-info">
                     <th>Name</th>
                     <th>Episodes</th>
-                    <th>Status</th>
-                    <th>Genres</th>
                     <th>Type</th>
+                    <th>Status</th>
                     <th>Score</th>
                     <th>Rank</th>
+                    <th>Genres</th>
                   </tr>
                 </thead>
                 <tbody id="bodyTable-Api">
@@ -373,14 +374,14 @@
               </table>
             </div>
           </div>
-          <div class="col-lg-3">
+          <!--div class="col-lg-3">
             <article class="customers-wrapper">
               <canvas id="customersChart" aria-label="Customers statistics" role="img"></canvas>
-              <!--              <p class="customers__title">New Customers <span>+958</span></p>
+              <             <p class="customers__title">New Customers <span>+958</span></p>
               <p class="customers__date">28 Daily Avg.</p>
-              <picture><source srcset="./img/svg/customers.svg" type="image/webp"><img src="./img/svg/customers.svg" alt=""></picture> -->
+              <picture><source srcset="./img/svg/customers.svg" type="image/webp"><img src="./img/svg/customers.svg" alt=""></picture> >
             </article>
-            <article class="white-block">
+            < article class="white-block">
               <div class="top-cat-title">
                 <h3>Top categories</h3>
                 <p>28 Categories, 1400 Posts</p>
@@ -468,7 +469,7 @@
                 </li>
               </ul>
             </article>
-          </div>
+          </div-->
         </div>
       </div>
     </main>

@@ -11,27 +11,26 @@ window.onload = function () {
       for (let i = 0; i < data.length; i++) {
         let name = data[i].title
         let episodes = data[i].episodes
-        let duration = data[i].duration
+        let type = data[i].type
         let status = data[i].status
-        let rating = data[i].rating
+        let score = data[i].score
         let rank = data[i].rank
-        let genres = data[i].genres
-        /*let lineaGenres 
-        for(let j = 0; j < genres.length; j++){
-          lineaGenres = genres[i].name+lineaGenres
-        }*/
-      
-        //const fila = "<tr><td>" + name + "</td><td>" + episodes + "</td><td>" + duration + "</td><td>" + status + "</td><td>" + rating + "</td><td>" + rank + "</td><td>" + genres + "</td></tr>";
+        let nameG = ""
+        let genres = Object.values(data[i].genres)
+        for (let j = 0; j < genres.length; j++){
+          let listaG = Object.values(genres[j])
+          nameG += " "+Object.values(listaG)[2] + " ,"
+        }
         const fila =`<tr>
                       <td>${name}</td>
-                      <td class="text-center">${episodes}</td>
-                      <td class="text-center">${duration}</td>
-                      <td class="text-center">
+                      <td>${episodes}</td>
+                      <td>${type}</td>
+                      <td>
                         <div class="rating">${status}</div>
                       </td>
-                      <td class="text-center">${rating}</td>
-                      <td class="text-center">${rank}</td>
-                      <td class="text-center">${genres}</td>
+                      <td>${score}</td>
+                      <td>${rank}</td>
+                      <td>${nameG}</td>
                       </tr>
                       `
         let body = document.createElement("tr");

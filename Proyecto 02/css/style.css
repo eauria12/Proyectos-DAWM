@@ -1896,6 +1896,10 @@ label {
 
 .users-table-info th {
   font-weight: 500;
+  border: 2px;
+  padding: 10px;
+  text-align: center;
+  
 }
 
 .users-table td {
@@ -1904,6 +1908,9 @@ label {
   border-bottom: 1px solid #EEEEEE;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
 .users-table td:first-child {
@@ -3296,7 +3303,7 @@ label {
 }
 
 .darkmode .gray-circle-btn {
-  background-color: #222235;
+  background-color: #81e0d898;
 }
 
 .darkmode .sun-icon {
@@ -3488,15 +3495,21 @@ label {
 #bodyTable-Api .rating {
   color: #fc424a;
   border: 1px solid #fc424a;
+  border-radius: 5px;
+  text-align: center;
 }
 
-/* This only changes this particular animation duration */
-.icon.logo.animate__animated.animate__heartBeat {
-  --animate-infinite: infinite;
+.animate__animated.animate__wobble{
+  --animate-duration: 20s;
 }
 
+/*.posts-table tr, .posts-table td, .posts-table th {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}*/
 
-
+/*RESPONSIVE*/
 
 @media (min-width: 576px) {
   .container {
