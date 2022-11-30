@@ -15,13 +15,19 @@ window.onload = function () {
         let status = data[i].status
         let score = data[i].score
         let rank = data[i].rank
+        let year = data[i].year
         let nameG = ""
         let genres = Object.values(data[i].genres)
-        for (let j = 0; j < genres.length; j++){
+        for (let j = 0; j < genres.length; j++) {
           let listaG = Object.values(genres[j])
-          nameG += " "+Object.values(listaG)[2] + " ,"
+          if(j == 0){
+            nameG += " " + Object.values(listaG)[2] 
+          } else {
+            nameG += " , " + Object.values(listaG)[2] 
+          }
         }
-        const fila =`<tr>
+        if (status != "Currently Airing") {
+          const fila = `<tr>
                       <td>${name}</td>
                       <td>${episodes}</td>
                       <td>${type}</td>
@@ -30,12 +36,31 @@ window.onload = function () {
                       </td>
                       <td>${score}</td>
                       <td>${rank}</td>
+                      <td>${year}</td>
                       <td>${nameG}</td>
                       </tr>
                       `
-        let body = document.createElement("tr");
-        body.innerHTML = fila;
-        document.getElementById("bodyTable-Api").appendChild(body);
+          let body = document.createElement("tr");
+          body.innerHTML = fila;
+          document.getElementById("bodyTable-Api").appendChild(body);
+        } else {
+          const fila1 = `<tr>
+                      <td>${name}</td>
+                      <td>${episodes}</td>
+                      <td>${type}</td>
+                      <td>
+                        <div class="ratingAp">${status}</div>
+                      </td>
+                      <td>${score}</td>
+                      <td>${rank}</td>
+                      <td>${year}</td>
+                      <td>${nameG}</td>
+                      </tr>
+                      `
+          let body = document.createElement("tr");
+          body.innerHTML = fila1;
+          document.getElementById("bodyTable-Api").appendChild(body);
+        }
       }
 
     })
@@ -43,3 +68,4 @@ window.onload = function () {
       document.getElementById('respuesta').innerHTML = JSON.stringify(error.message)
     })
 }
+

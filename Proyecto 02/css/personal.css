@@ -1,0 +1,89 @@
+
+#bodyTable-Api .rating {
+  color: #fc424a;
+  border: 1px solid #fc424a;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#bodyTable-Api .ratingAp {
+  color: #42fc4b;
+  border: 1px solid #42fc4b;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.animate__animated.animate__wobble{
+  --animate-duration: 20s;
+}
+
+/*DROPDOWN*/
+
+.box {
+  position: relative;
+}
+
+.btn-dropdown {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #344675;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-dropdown::after {
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  vertical-align: 4px;
+  content: '';
+}
+
+.btn-dropdown:hover {
+  opacity: .9;
+}
+
+#lista {
+  padding: 2px 0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#lista option {
+  padding: 8px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#listaYear {
+  padding: 2px 0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#listaYear option {
+  padding: 8px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-dropdown.is-open::after {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  vertical-align: middle;
+}
+
+.row {
+  margin: 10px;
+}
+

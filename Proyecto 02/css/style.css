@@ -1911,6 +1911,7 @@ label {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+  width: 5%;
 }
 
 .users-table td:first-child {
@@ -3491,23 +3492,6 @@ label {
 .moon-icon {
   display: none;
 }
-
-#bodyTable-Api .rating {
-  color: #fc424a;
-  border: 1px solid #fc424a;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.animate__animated.animate__wobble{
-  --animate-duration: 20s;
-}
-
-/*.posts-table tr, .posts-table td, .posts-table th {
-    border: 2px solid;
-    border-collapse: collapse;
-    padding: 10px;
-}*/
 
 /*RESPONSIVE*/
 
