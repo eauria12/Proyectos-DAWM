@@ -6,6 +6,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
   /* function testWebP(callback) {
@@ -324,7 +325,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       return gradient;
     }
-    /* Visitors chart */
 
     /*GRAFICO PRINCIPAL*/
     var ctx = document.getElementById('myChart');
@@ -334,9 +334,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var myChart = new Chart(myCanvas, {
         type: 'line',
         data: {
-          labels: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          labels: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'EKFDKKDF', 'Jun'],
           datasets: [{
-            label: 'Last 6 months',
+            label: 'Movie',
             data: [35, 27, 40, 15, 30, 25, 45],
             cubicInterpolationMode: 'monotone',
             tension: 0.4,
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function () {
             borderColor: ['rgba(95, 46, 234, 1)'],
             borderWidth: 2
           }, {
-            label: 'Previous',
+            label: 'TVs',
             data: [20, 36, 16, 45, 29, 32, 10],
             cubicInterpolationMode: 'monotone',
             tension: 0.4,
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             title: {
               display: true,
-              text: ['Visitor statistics', 'Nov - July'],
+              text: ['Total Anime', 'Per Year'],
               align: 'start',
               color: '#171717',
               font: {
