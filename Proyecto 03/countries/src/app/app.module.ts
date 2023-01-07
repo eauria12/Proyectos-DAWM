@@ -8,6 +8,8 @@ import { CountriesComponent } from './components/countries/countries.component';
 import { CountryComponent } from './components/country/country.component';
 import { CommentComponent } from './components/comment/comment.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { CommentComponent } from './components/comment/comment.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
