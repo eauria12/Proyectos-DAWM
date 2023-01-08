@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class CountriesComponent {
 
+  countries: any[] = [];
+
+  constructor() {
+
+    /* Leer desde el localStorage */
+    let animeWorld = JSON.parse(localStorage.getItem("animeWorld")!);
+      
+    if(animeWorld) {
+      this.countries = animeWorld as any[]  
+    }
+    
+  }
+
 }

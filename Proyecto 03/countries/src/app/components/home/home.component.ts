@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.resourcesService.getData<any[]>("").subscribe(response => {
+    this.resourcesService.getData().subscribe(response => {
       
       let countries= localStorage.getItem("countries");
       if(!countries) {
@@ -21,6 +21,10 @@ export class HomeComponent implements OnInit {
 
     })
   }
+
+
+
+  
 
 
 }

@@ -8,8 +8,7 @@ export class ResourcesService {
 
   constructor(private http: HttpClient) { }
 
-  getData<T>(url: string) {
-    url = "https://restcountries.com/v3.1/all"
-    return this.http.get<T[]>(url)
+  getData() {
+    return this.http.get('https://restcountries.com/v3.1/all')
   }
 }
