@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.resourcesService.getData().subscribe(response => {
       
-      let countries= localStorage.getItem("countries");
-      if(!countries) {
-        localStorage.setItem("countries", JSON.stringify(response));
+      let countriesL = localStorage.getItem("countriesL");
+      if(!countriesL) {
+        localStorage.setItem("countriesL", JSON.stringify(response));
       }
 
     })

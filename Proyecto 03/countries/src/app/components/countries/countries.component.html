@@ -25,6 +25,7 @@
       <h1 class="mb-5"><strong>Countries of the World</strong></h1>
 
       <div class="row">
+        <!--NGFOR-->
         <div class="col-lg-4 col-md-12 mb-4" *ngFor="let country of countries">
 
           <div class="card text-black">
@@ -33,22 +34,23 @@
             <div class="card-body">
               <div class="text-center">
                 <h5 class="card-title">{{country.name.official}}</h5>
-                <p class="text-muted mb-4">(In Spanish: «{{country.translations.spa.official}}»)</p>
+                <p class="text-muted mb-4">(In Spanish: «{{country.translations.spa.official}}») <br> (In Arabic: «{{country.translations.ara.official}}»)</p>
+
               </div>
               <div>
                 <div class="d-flex justify-content-between">
-                  <span>Capital</span><span>{{country.capital[0]}}</span>
+                  <span>Capital</span><span>{{country.capital}}</span>
                 </div>
                 <div class="d-flex justify-content-between">
-                  <span>Region</span><span>{{country.continents[0]}}</span> 
+                  <span>Continent</span><span>{{country.region}}</span> 
                 </div>
                 <div class="d-flex justify-content-between">
-                  <span>SubRegion</span><span>{{country.subregion}}</span>
+                  <span>Region</span><span>{{country.subregion}}</span>
                 </div>
               </div>
               <div class="d-flex justify-content-between total font-weight-bold mt-4">
                 
-                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark" routerLink="/country/{country.name.common}}">
+                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark" routerLink="/country/{{country.name.common}}">
                   Learn more
                 </button>
                
