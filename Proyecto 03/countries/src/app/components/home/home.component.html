@@ -1,26 +1,85 @@
-<header>
-   
-    <!-- Navbar -->
-  
-    <!-- Background image -->
-    <div
-      class="p-5 text-center bg-image"
-      style="
-        background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-        background-size: 100vw 100vh;
-      "
-    >
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 85vh;">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">WELCOME TO WORLD LEARNING</h1>
-            <h4 class="mb-3">Learn about some countries of the world</h4>
-            <a class="btn btn-outline-light btn-lg" routerLink="/countries" role="button">Enter Now</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(73).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea" />    
+          <div class="carousel-caption d-md-block">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 75vh;">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">WELCOME TO INFOCOUNTRIES</h1>
+                  <h4 class="mb-3">Do you want to know the countries of the world?</h4>
+                  <br>
+                  <a class="btn btn-outline-light btn-lg" routerLink="/countries" role="button">Enter Now</a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(83).webp" class="d-block w-100" alt="Sunset Over the City" />
+          <div class="carousel-caption d-md-block">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 75vh;">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">WELCOME TO INFOCOUNTRIES</h1>
+                  <h4 class="mb-3">Do you want to know the countries of the world?</h4>
+                  <br>
+                  <a class="btn btn-outline-light btn-lg" routerLink="/countries" role="button">Enter Now</a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(11).webp" class="d-block w-100" alt="Taking up Water with a Spoon" />    
+          <div class="carousel-caption d-md-block">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 75vh;">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">WELCOME TO INFOCOUNTRIES</h1>
+                  <h4 class="mb-3">Do you want to know the countries of the world?</h4>
+                  <br>
+                  <a class="btn btn-outline-light btn-lg" routerLink="/countries" role="button">Enter Now</a>
+                
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- Background image -->
     
-  </header>
-
+    <!-- End Example Code -->
+  </body>
+</html>
