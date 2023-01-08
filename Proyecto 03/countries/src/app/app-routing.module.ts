@@ -9,7 +9,7 @@ import {CommentComponent} from "./components/comment/comment.component";
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "countries", component: CountriesComponent},
-  { path: "country", component: CountryComponent },
+  { path: "country/:name", component: CountryComponent },
   { path: "comment", component: CommentComponent },
   { path: "**", redirectTo: "home" }
 ];
