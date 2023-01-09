@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "countries", component: CountriesComponent},
   { path: "country/:name", component: CountryComponent },
-  { path: "map", component: MapComponent },
+  { path: "map/:name", component: MapComponent },
   { path: "**", redirectTo: "home" }
 ];
 

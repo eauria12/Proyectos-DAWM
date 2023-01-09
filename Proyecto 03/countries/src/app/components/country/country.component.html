@@ -42,11 +42,15 @@
                 <div class="d-flex justify-content-between">
                   <span>Population</span><span>{{country.population}} Hab.</span>
                 </div>
+
+                <div class="d-flex justify-content-between">
+                  <span>Demonym</span><span>{{country.demonyms.eng.m}}</span>
+                </div>
              
               </div>
               <div class="d-flex justify-content-between total font-weight-bold mt-4">
                 <br>
-                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark" routerLink="/country/{{country.name.common}}"> 
+                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark" routerLink="/map/{{country.name.common}}"> 
                     <i class="fas fa-map-location-dot" aria-hidden="true"></i>
                     Ubication
                   </button>

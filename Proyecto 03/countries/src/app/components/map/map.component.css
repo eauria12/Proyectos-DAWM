@@ -1,24 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Nanum+Myeongjo:wght@700&display=swap');
+
 body {
-    background-color: #f5f7fa;
-    }
-    
-    .card.map-card .living-coral {
     background-color: #fa7268;
-    }
-    
-    .card.map-card .living-coral-text {
+}
+
+.card.map-card .living-coral {
+    background-color: #fa7268;
+}
+
+.card.map-card .living-coral-text {
     color: #fa7268;
-    }
-    
-    .card.map-card .table th {
-    width: 2rem;
-    }
-    
-    .card.map-card .pt-3-5 {
-    padding-top: 1.25rem;
-    }
-    
-    .card.map-card .card-body {
+}
+
+.card.map-card .pt-3-5 {
+    padding-top: 1.25rem; 
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.card.map-card .card-body {
     position: absolute;
     width: 100%;
     height: 80%;
@@ -30,29 +29,51 @@ body {
     transition: all 1s;
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important;
-    }
-    
-    .card.map-card .card-body.closed {
+}
+
+.card.map-card .card-body.closed {
     top: 100%;
     height: 7.5rem;
     margin-top: -7.5rem;
-    }
-    
-    .card.map-card .map-container {
+}
+
+.card.map-card .map-container {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    }
-    
-    .card.map-card .map-container iframe {
+}
+
+.card.map-card .map-container iframe {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
-    }
-    
-    .card.map-card .button .btn-floating {
+}
+
+.card.map-card .button .btn-floating {
     margin-top: -1.5rem;
-    }
+}
+
+
+i {
+    padding: 11px;
+    font-size: 1.2em;
+}
+
+
+.eli{
+    text-transform: uppercase;
+}
+
+
+.eli2 {
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.eli2 i{
+    font-size: 0.9em;
+}
+
