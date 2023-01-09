@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { ResourcesService } from '../../service/resources.service';
+//import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -20,12 +21,17 @@ export class HomeComponent implements OnInit {
       }
 
     })
+
+    /*setTimeout(() => {
+      this.router.navigate(['countries']);
+    }, 1500);*/
+
+
   }
 
-    
-
-
-  
 
 
 }
+
+
+//private router: Router

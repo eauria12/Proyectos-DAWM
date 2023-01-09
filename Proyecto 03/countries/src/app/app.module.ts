@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CountriesComponent } from './components/countries/countries.component';
 import { CountryComponent } from './components/country/country.component';
-import { CommentComponent } from './components/comment/comment.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     CountriesComponent,
     CountryComponent,
-    CommentComponent
+    MapComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Nanum+Myeongjo:wght@700&display=swap');
 
 i{
-    padding: 10px;
+    padding: 11px;
     font-size: 1.2em;
+}
+
+h5 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+span, button {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+}
+
+img {
+    height: 40vh;
+    padding: 20px 20px 0 20px;
+}
+
+
+.may:first-letter {
+    text-transform: uppercase;
+}
+
+figcaption{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
 }

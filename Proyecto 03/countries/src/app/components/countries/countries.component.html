@@ -34,7 +34,7 @@
     <!--Section: Content-->
     <i class="fas fa-angles-left" aria-hidden="true" routerLink="/home"></i>
     <section class="text-center">
-      <h1 class="mb-5"><strong>Countries of the World</strong></h1>
+      <h1 class="mb-5"><strong>Countries and Islands of the World</strong></h1>
 
       <div class="row">
         <!--NGFOR-->
@@ -45,8 +45,8 @@
             <img src="{{country.flags.png}}" class="card-img-top" alt="Apple Computer" />
             <div class="card-body">
               <div class="text-center">
-                <h5 class="card-title">{{country.name.official}}</h5>
-                <p class="text-muted mb-4">(In Spanish: «{{country.translations.spa.official}}») <br> (In Arabic: «{{country.translations.ara.official}}»)</p>
+                <h5 class="card-title">{{country.name.common}}</h5>
+                <p class="text-muted mb-4">(In Spanish: «{{country.translations.spa.common}}») <br> (In Arabic: «{{country.translations.ara.common}}»)</p>
 
               </div>
               <div>
