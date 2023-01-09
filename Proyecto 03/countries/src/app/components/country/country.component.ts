@@ -16,6 +16,14 @@ export class CountryComponent {
     this.route.params.subscribe(params => {
       let name = params['name'];
 
+      let countriesL = JSON.parse(localStorage.getItem("countriesL")!);
+
+      if(countriesL) {
+        let countries = countriesL as Array<any>
+        let countriesfiltered = countries.filter(country=> country.name.common == name)    
+        this.country = countriesfiltered[0]; 
+      }
+
     });
 
   }
