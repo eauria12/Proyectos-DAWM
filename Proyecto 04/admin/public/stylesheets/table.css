@@ -1,0 +1,79 @@
+
+.table-responsive {
+    margin: 30px 0;
+}
+.table-wrapper {
+    width: 850px;
+    background: #fff;
+	margin: 0 auto;
+    padding: 20px 10px 5px;
+    box-shadow: 0 0 1px 0 #ecd3b9;
+    background-color: #ecd3b9;
+}
+.table-title .btn-group {
+    float: right;
+}
+.table-title .btn {
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 95%;
+    outline: none !important;
+    height: 30px;
+}
+/*Cambiar letra tabla*/
+.table-title {
+    min-width: 100%;
+    border-bottom: 1px solid #ecd3b9;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    /*background: rgb(0, 50, 74);*/
+    margin: -36px -38px 10px;
+    padding: 15px 30px ;
+    color: rgb(8, 8, 8);
+    font-size: 0.9rem; 
+}
+.table-title h2 {
+    font-size: 1.8rem;
+    margin-left: -12px;
+}
+table.table {
+    min-width: 100%;
+    min-height: 100%;
+}
+table.table tr th, table.table tr td {
+    border-color: #ecd3b9;
+    padding: 12px 9.3px;
+    vertical-align: middle; 
+    text-align: center; /*Cambiar contenido de tabla*/
+}
+table.table tr th:first-child {
+    width: 80px;
+}
+table.table tr th:last-child {
+    width: 100px;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+table.table td a {
+    color: #2196f3;
+}
+table.table td .btn.manage {
+    padding: 2px 10px;
+    background: #37BC9B;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+table.table td .btn.manage:hover {
+    background: #2e9c81;		
+}
+
+th {
+    font-size: 1rem;
+}

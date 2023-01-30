@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@100&display=swap');
+
+header {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: .600rem;
+  font-weight: 900;
+}
+
+body {
+  background-color: #ecd3b9;
+  font-family: 'ABeeZee', sans-serif;
+  margin: 0;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+}
+
+/*
+ * Sidebar #dee3f1
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 73px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+/*sidebar vertical*/
+.sidebar-sticky { 
+  height: calc(100vh - 48px);
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: #333;
+}
+
+/*Vetical letras*/
+.sidebar .nav-link {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.966);
+}
+
+
+.sidebar .nav-link .feather {
+  margin-right: 15px;
+  color: wrgba(255, 255, 255, 0.966);
+}
+
+.sidebar .nav-link:hover {
+  color: #ecd3b9;
+  font-size: 1.1rem;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+/*SALES DASHBOARD*/
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  color: #ecd3b9;  
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 10rem;
+}
+
+.navbar .form-control {
+  padding: .50rem 1rem;
+}
+
+.form-control-dark {
+  font-weight: 900;
+  background-color: #fcfcfc;
+  border-color: rgba(255, 255, 255, .1);
+  font-family: 'Inter', sans-serif;
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+li {
+  margin-top: 1rem;
+}
+
+.m {
+  padding-right: 20px;
+}
