@@ -14,7 +14,6 @@
               <th>First Name</th>
               <th>Phone</th>
               <th>Address Line</th>
-              <th>City</th>
               <th>Country</th>
               <th>Postal Code</th>
               <th>Credit Limit</th>
@@ -30,11 +29,10 @@
                 <td><%= customer.contactFirstName %></td>
                 <td><%= customer.phone %></td>
                 <td><%= customer.addressLine1 %></td>
-                <td><%= customer.city %></td>
                 <td><%= customer.country %></td>
                 <td><%= customer.postalCode %></td>
                 <td><%= customer.creditLimit %></td>
-                <td><a href="/orders" class="btn btn-sm manage">View</a></td>
+                <td><a href="/orders/<%= customer.customerNumber %>" class="btn btn-sm manage">View</a></td>
               </tr>
               <% }); %>
           </tbody>

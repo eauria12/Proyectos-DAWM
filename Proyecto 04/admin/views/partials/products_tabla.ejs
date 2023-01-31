@@ -1,0 +1,34 @@
+<div class="table-responsive">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2><b>Orders</b></h2>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Code</th>
+              <th>Product Name</th>
+              <th>Order Date</th>
+              <th>Product Line</th>
+           
+            </tr>
+          </thead>
+          <tbody>
+            <% arrProducts.forEach((product,idx) => { %>
+              <tr>
+                <td><%= idx %></td>
+                <td><%= product.orderNumber %></td>
+                <td><%= product.productName %></td>
+                <td><%= product.orderDate %></td>
+                <td><%= product.productLine %></td>
+
+                
+              </tr>
+              <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </div>

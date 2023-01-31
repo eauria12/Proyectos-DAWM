@@ -6,7 +6,7 @@
     width: 850px;
     background: #fff;
 	margin: 0 auto;
-    padding: 20px 10px 5px;
+    padding: 20px 15px 5px; /*Cmabie el border izquierdo de la tabla */
     box-shadow: 0 0 1px 0 #ecd3b9;
     background-color: #ecd3b9;
 }
@@ -22,6 +22,7 @@
     outline: none !important;
     height: 30px;
 }
+
 /*Cambiar letra tabla*/
 .table-title {
     min-width: 100%;
@@ -38,13 +39,18 @@
     font-size: 1.8rem;
     margin-left: -12px;
 }
-table.table {
-    min-width: 100%;
-    min-height: 100%;
+
+h4 {
+    font-size: 1rem;
+    margin-left: -7px;
+    border: 2px solid #37BC9B;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
+
 table.table tr th, table.table tr td {
     border-color: #ecd3b9;
-    padding: 12px 9.3px;
+    padding: 12px 20px;
     vertical-align: middle; 
     text-align: center; /*Cambiar contenido de tabla*/
 }
@@ -77,3 +83,8 @@ table.table td .btn.manage:hover {
 th {
     font-size: 1rem;
 }
+
+.total {
+    padding: 25px 290px 0 395px;
+}
+
